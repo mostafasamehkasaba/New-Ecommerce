@@ -1,0 +1,63 @@
+let currentIndex = 1;
+var group1 = document.querySelectorAll(".products .group1");
+var group2 = document.querySelectorAll(".products .group2");
+var group3 = document.querySelectorAll(".products .group3");
+function showGroup(index) {
+ 
+  group1.forEach((e) => (e.style.display = "none"));
+  group2.forEach((e) => (e.style.display = "none"));
+  group3.forEach((e) => (e.style.display = "none"));
+
+
+  btn1.classList.remove("active");
+  btn2.classList.remove("active");
+  btn3.classList.remove("active");
+
+ 
+  if (index === 1) {
+    group1.forEach((e) => (e.style.display = "grid"));
+    btn1.classList.add("active");
+  } else if (index === 2) {
+    group2.forEach((e) => (e.style.display = "grid"));
+    btn2.classList.add("active");
+  } else if (index === 3) {
+    group3.forEach((e) => (e.style.display = "grid"));
+    btn3.classList.add("active");
+  }
+}
+
+
+arrowRight.addEventListener("click", (e) => {
+  e.preventDefault(); 
+  currentIndex++;
+  if (currentIndex > 3) currentIndex = 1;
+  showGroup(currentIndex);
+});
+
+// زر "السابق"
+arrowLeft.addEventListener("click", (e) => {
+  e.preventDefault();
+  currentIndex--;
+  if (currentIndex < 1) currentIndex = 3;
+  showGroup(currentIndex);
+});
+
+
+btn1.addEventListener("click", (e) => {
+  e.preventDefault();
+  currentIndex = 1;
+  showGroup(currentIndex);
+});
+btn2.addEventListener("click", (e) => {
+  e.preventDefault();
+  currentIndex = 2;
+  showGroup(currentIndex);
+});
+btn3.addEventListener("click", (e) => {
+  e.preventDefault();
+  currentIndex = 3;
+  showGroup(currentIndex);
+});
+
+
+showGroup(currentIndex);

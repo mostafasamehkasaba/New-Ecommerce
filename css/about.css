@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: myfont ;
+    src: url(/fonts/Cairo-VariableFont_slnt\,wght.ttf);
+}
+body{
+    font-family: var(--my-font);
+    
+    background-color: #EEEEEE;
+}
+:root{
+    --main-color : #89A8B2;
+    --sec-color  : #B3C8CF;
+    --third-color: #E5E1DA;
+    --fourth-color:#F1F0E8;
+    --my-font: myfont;
+}
+nav{
+    z-index: 999;
+}
+.hero {
+    width: 100%;
+    min-height: 70vh; 
+    height: auto;       
+    background-image: url(/image/group_meeting.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); 
+  z-index: 0;
+  border-radius: 0.5rem; 
+}
+.hero * {
+    position: relative;
+    z-index: 1;
+}
+.hero-text{
+    width: 100%;
+    height: 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    
+}
+
+.two2{
+    width: 90%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px auto;
+}
+.two2 .text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.two2 .img{
+    width: 50%;
+    height: 100%;
+    
+
+}
+.two2 .img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.our_team{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.our_team span{
+  border-bottom: 3px solid;
+    width: 100px;
+    color: black;
+    font-weight: bolder;
+    font-size: xx-large;
+    height: 12px;
+    margin: auto;
+}
+.our_team h1 ,.our_team .text{
+    text-align: center;
+}
+.our_team .content{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;;
+}
+.our_team div{
+    width: 26%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    
+}
+.our_team div .style{
+    width: 100%;
+    height: 90%;
+    background-color: #F5F7F9;
+    display: flex;        
+    flex-wrap: wrap; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.our_team div .style img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.our_team div .style h2{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about{
+    width: 100%;
+    margin: 30px auto;
+    height: 400px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about .one,.about .two,.about .three,.about .four{
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.about .one div , .about .two div ,.about .three div ,.about .four div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 40%;
+}
+.about .one img ,.about .two img,.about .three img ,.about .four img{
+       width: 18%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about .section{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    z-index: 999;
+}
+footer .group-links{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .links ,footer .for-her, footer .for-him{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    color: rgb(4, 4, 145);
+}
+footer .footer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    font-size: 20px;
+    border-top: 1px solid #ccc;
+}
+footer .footer .content{
+    width: 82%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
