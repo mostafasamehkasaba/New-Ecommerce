@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: myfont ;
-    src: url(/fonts/Cairo-VariableFont_slnt\,wght.ttf);
+    src: url(fonts/Cairo-VariableFont_slnt\,wght.ttf);
 }
 body{
     font-family: var(--my-font);
