@@ -227,7 +227,7 @@ nav{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url(image/017.jpg);
+    background-image: url(/image/017.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
